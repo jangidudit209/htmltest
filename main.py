@@ -4,7 +4,8 @@ import zipfile
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = "YOUR_BOT_TOKEN"  # Replace with your actual token
+# Use Heroku environment variable
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # HTML Templates
 HTML_TEMPLATE = '''<!DOCTYPE html>
